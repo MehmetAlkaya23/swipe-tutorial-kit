@@ -1,0 +1,68 @@
+{
+  "name": "react-native-swipe-tutorial-kit",
+  "version": "0.1.0",
+  "description": "A tiny, dependency-free onboarding overlay that teaches first-time users how to swipe, and remembers that they have seen it.",
+  "keywords": [
+    "react-native",
+    "expo",
+    "swipe",
+    "onboarding",
+    "tutorial",
+    "coach-mark",
+    "gesture-hint"
+  ],
+  "license": "MIT",
+  "author": "MehmetAlkaya23",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MehmetAlkaya23/swipe-tutorial-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MehmetAlkaya23/swipe-tutorial-kit/issues"
+  },
+  "homepage": "https://github.com/MehmetAlkaya23/swipe-tutorial-kit#readme",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf lib",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "prepack": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-native": ">=0.72.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@react-native/babel-preset": "0.87.1",
+    "@react-native/jest-preset": "0.87.1",
+    "@testing-library/react-native": "13.3.3",
+    "@types/jest": "30.0.0",
+    "@types/react": "19.3.0",
+    "eslint": "10.11.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "jest": "30.5.2",
+    "react": "19.2.3",
+    "react-native": "0.87.1",
+    "react-test-renderer": "19.2.3",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1"
+  }
+}
